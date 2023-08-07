@@ -1,0 +1,12 @@
+POST http://localhost:3000/usuarios HTTP/1.1
+content-type: application/json
+
+{
+  "nome": "Alex",
+  "email": "alex@alura.com.br",
+  "senha": "123123"
+}
+
+###busca usuario
+GET http://localhost:3000/usuarios HTTP/1.1
+content-type: application/json
