@@ -2,8 +2,8 @@ POST http://localhost:3000/usuarios HTTP/1.1
 content-type: application/json
 
 {
-  "nome": "Gustavo Paiva",
-  "email": "g.paiva2@alura.com.br",
+  "nome": "Gustavo Paiva Oliveira",
+  "email": "g.paiva@alura.com.br",
   "senha": "123123"
 }
 
