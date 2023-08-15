@@ -1,17 +1,17 @@
 POST http://localhost:3000/usuarios HTTP/1.1
 content-type: application/json
 
-{
-  "nome": "Alexandre Oliveira",
-  "email": "alexandre1212@alura.com.br",
-  "senha": "123123"
-}
-
 # {
-#   "nome": "Gustavo Paiva",
-#   "email": "gu.paiva@alura.com.br",
+#   "nome": "Alexandre Oliveira",
+#   "email": "alexandre1212@alura.com.br",
 #   "senha": "123123"
 # }
+
+{
+  "nome": "Gustavo Paiva",
+  "email": "gu.paiva@alura.com.br",
+  "senha": "123123"
+}
 
 # {
 #   "nome": "Leonardo Pereira",
@@ -25,7 +25,7 @@ content-type: application/json
 
 
 ###atualiza usuario - colocar o id do usuario depois do usuarios/
-PUT http://localhost:3000/usuarios/61c3bf0e-8eb5-4123-a7a2-c9a4cfdff398 HTTP/1.1
+PUT http://localhost:3000/usuarios/d3e017f2-c3c5-4448-a00b-00cded969c83 HTTP/1.1
 content-type: application/json
 
 {

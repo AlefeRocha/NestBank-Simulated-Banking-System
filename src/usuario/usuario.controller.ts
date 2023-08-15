@@ -40,9 +40,9 @@ export class UsuarioController {
 
     @Put('/:id')
     async atualizaUsuario (@Param('id') id: string, @Body() novosDados: AtualizaUsuarioDTO){
-        const usuarioAtualizado = await this.usuarioRepository.atualiza(id, novosDados);
-
-        return {
+        const usuarioAtualizado = await this.usuarioRepository.atualiza(id, novosDados);        
+        
+        return{
             usuario: usuarioAtualizado,
             message: 'Usuário atualizado com sucesso!'
         }
