@@ -1,0 +1,25 @@
+# Add files here to ignore them from prettier formatting
+
+# compiled output
+/serverless/users/dist
+/serverless/users/.build
+/serverless/users/coverage
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+/serverless/users/node_modules
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Workspace
+package.json
+*/**/tsconfig.*
+*/**/jest.config.*
+*/**/proxy.conf*
