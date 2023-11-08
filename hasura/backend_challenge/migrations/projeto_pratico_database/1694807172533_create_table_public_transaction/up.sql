@@ -1,0 +1,1 @@
+CREATE TABLE "public"."transaction" ("id" serial NOT NULL, "account_id" uuid NOT NULL, "value" numeric NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("account_id") REFERENCES "public"."account"("id") ON UPDATE restrict ON DELETE restrict);

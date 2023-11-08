@@ -1,0 +1,27 @@
+actions:
+  - name: balance
+    definition:
+      kind: ""
+      handler: http://host.docker.internal:3000/balance
+    comment: Receives the account id and returns the account balance
+  - name: deposit
+    definition:
+      kind: ""
+      handler: http://host.docker.internal:3000/deposit
+    comment: Receives the account ID and deposit amount, and returns the balance
+  - name: withdraw
+    definition:
+      kind: ""
+      handler: http://host.docker.internal:3000/withdraw
+    comment: Receives the account ID and withdraw amount, and returns the balance
+custom_types:
+  enums: []
+  input_objects:
+    - name: InputId
+    - name: id
+    - name: DepositInput
+  objects:
+    - name: Balance
+    - name: Deposit
+    - name: Withdraw
+  scalars: []

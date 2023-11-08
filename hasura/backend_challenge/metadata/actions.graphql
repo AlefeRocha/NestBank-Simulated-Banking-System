@@ -1,0 +1,45 @@
+type Query {
+  balance(
+    account_id: uuid
+  ): Balance
+}
+
+type Query {
+  deposit(
+    account_id: uuid
+    amount: Float
+  ): Deposit
+}
+
+type Query {
+  withdraw(
+    account_id: uuid
+    amount: Float
+  ): Withdraw
+}
+
+input InputId {
+  id: String!
+}
+
+input id {
+  id: uuid!
+}
+
+input DepositInput {
+  account_id: uuid
+  amount: Float
+}
+
+type Balance {
+  balance: Float
+}
+
+type Deposit {
+  balance: Float
+}
+
+type Withdraw {
+  balance: Float
+}
+
