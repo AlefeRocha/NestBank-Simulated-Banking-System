@@ -1,0 +1,29 @@
+### Deposit
+PUT http://localhost:3000/transaction/ec421ab4-c5e0-4314-b0c0-5463259dd7c7/deposit HTTP/1.1 
+content-type: application/json
+
+{
+    "value": 100
+}
+
+
+### Withdraw
+PUT http://localhost:3000/transaction/ec421ab4-c5e0-4314-b0c0-5463259dd7c7/withdraw HTTP/1.1
+content-type: application/json
+
+{
+    "value": 100
+}
+
+
+### Balance
+GET http://localhost:3000/transaction/ec421ab4-c5e0-4314-b0c0-5463259dd7c7/balance HTTP/1.1
+content-type: application/json
+
+
+### Transactions List
+GET http://localhost:3000/transaction/db520d09-7af4-4430-8ee0-3607ba45dc7c/transactions HTTP/1.1
+content-type: application/json
+
+# ec421ab4-c5e0-4314-b0c0-5463259dd7c7
+# db520d09-7af4-4430-8ee0-3607ba45dc7c

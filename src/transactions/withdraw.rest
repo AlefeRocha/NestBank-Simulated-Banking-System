@@ -1,0 +1,10 @@
+### Withdraw
+POST http://localhost:3000/withdraw HTTP/1.1
+content-type: application/json
+
+{
+    "input" : {
+        "account_id": "ec421ab4-c5e0-4314-b0c0-5463259dd7c7",
+        "amount": 100
+    }
+}
