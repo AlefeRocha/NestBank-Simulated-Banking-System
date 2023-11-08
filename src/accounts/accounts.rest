@@ -1,0 +1,34 @@
+### List all accounts
+GET http://localhost:3000/account HTTP/1.1 
+content-type: application/json
+
+
+### Get account by id
+GET http://localhost:3000/account/30e5ff54-76e6-48d3-a053-f7e42b6269b3 HTTP/1.1 
+content-type: application/json
+
+
+### Create a new account
+POST http://localhost:3000/account HTTP/1.1 
+content-type: application/json
+
+# {
+#     "name": "Gustavo Andrade",
+#     "email": "gu.andrade@email.com"
+# }
+
+{
+    "name": "Maria da Silva",
+    "email": "maria@n2b.com"
+}
+
+# {
+#     "name": "Isabela Oliveira",
+#     "email": "isa_oliveira@email.com"
+# }
+
+
+### Delete account by id
+DELETE http://localhost:3000/account/30e5ff54-76e6-48d3-a053-f7e42b6269b3 HTTP/1.1 
+content-type: application/json
+

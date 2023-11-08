@@ -1,0 +1,11 @@
+- name: negative_balance_notification
+  webhook: http://host.docker.internal:3000/negative-balance-notify
+  schedule: 0 0 * * *
+  include_in_metadata: true
+  payload: {}
+  retry_conf:
+    num_retries: 2
+    retry_interval_seconds: 15
+    timeout_seconds: 60
+    tolerance_seconds: 21600
+  comment: Trigger to notify the user that their balance is negative.
