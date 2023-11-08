@@ -1,0 +1,2 @@
+### Negative accounts noitfy
+POST http://localhost:3000/negative-balance-notify
